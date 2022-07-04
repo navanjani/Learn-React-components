@@ -1,0 +1,21 @@
+.pokemon-card {
+  margin: 10px 10px;
+  width: 400px;
+  height: 600px;
+  padding: 10px;
+  float: left;
+  .poke-img {
+    max-width: 200px;
+  }
+  li {
+    text-decoration: none;
+  }
+}
+
+.Pokemon {
+  transition: transform 0.2s ease;
+}
+.Pokemon:hover {
+  transform: scale(1.02) translate(0, -3px);
+  transform: scale(1.02) translate(0, -3px) rotate(360deg);
+}

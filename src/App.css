@@ -1,16 +1,3 @@
 .App {
   text-align: center;
 }
-
-.pokemon-card {
-  margin: 50px;
-  width: 500px;
-  border: solid 2px red;
-  padding: 10px;
-  display: inline block;
-
-}
-
-.poke-img {
-  max-width: 200px;
-}
