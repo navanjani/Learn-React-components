@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import Title from "./components/Title";
+import PokemonCard from "./components/PokemonCard";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <Title text="New Pokemon" />
+
+        <PokemonCard
+          title=" Charizard "
+          img="https://archives.bulbagarden.net/media/upload/thumb/3/36/132Ditto.png/500px-132Ditto.png"
+          description="Hello im Ditto"
+          weight={90}
+          awesome={true}
+          terrifying={false}
+          abilities={["Solar power", "Tough claws", "Drought"]}
+        />
+        <PokemonCard
+          title="Bulbasaur"
+          img="https://www.kindpng.com/picc/m/279-2795097_image-result-for-pokemon-anime-original-series-pokemon.png"
+          description="Hello I'm Pikachu"
+          weight={6.9}
+          awesome={true}
+          terrifying={false}
+          abilities={["Overgrow", "Chlorophyll"]}
+        />
+        <PokemonCard
+          title="Mewtwo"
+          img="https://www.kindpng.com/picc/m/279-2795097_image-result-for-pokemon-anime-original-series-pokemon.png"
+          description="Hello I'm Pikachu"
+          weight={122}
+          awesome={true}
+          terrifying={true}
+          abilities={["Overgrow", "Chlorophyll"]}
+        />
+        <PokemonCard
+          title="Mega beedrill"
+          img="https://www.kindpng.com/picc/m/279-2795097_image-result-for-pokemon-anime-original-series-pokemon.png"
+          description="Hello I'm Pikachu"
+          weight={65}
+          awesome={false}
+          terrifying={true}
+          abilities={["Intimidate", "Unnerve"]}
+        />
+      </main>
     </div>
   );
 }
